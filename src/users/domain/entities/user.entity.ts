@@ -7,7 +7,7 @@ export type UserProps = {
   createdAt?: Date;
 }
 
-// the interface is the core of app in clean architecture, so we need to build only the
+// the entity is the core of app in clean architecture, so we need to build only the
 // business logic of the app, not using external libraries
 export class UserEntity extends Entity<UserProps> {
   constructor(public readonly props: UserProps, id?: string) {
